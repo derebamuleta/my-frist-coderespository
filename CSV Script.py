@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt           # Data Visualization
 
 # Concerning pd.read_csv
 # https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html?highlight=read_csv#pandas.read_csv
-main_data = pd.read_csv('C:/Users/WORWOR/Desktop/IMSA Training 2022/Day 1/Part1/China 753 station monthly data 1951-2011.txt',skiprows=1,header=None)
+main_data = pd.read_csv('C:/Users/drbml/Desktop/IMSA_PYTHON_2023/Day 1/Day 1/part 1/China 753 station monthly data 1951-2011.txt',skiprows=1,header=None)
 print(main_data)
 info_variable   = ["Station No.","Year","Months","Average Temp","Average Max-Temp",
                    "Average Min-Temp","Average Relative Humidity","Precipitation","Average Wind-Speed","Sunshine","Null"]
@@ -48,7 +48,7 @@ interannual = select_data_2d.mean(1)
 print(interannual)
 
 # output file
-interannual.to_csv("C:/Users/WORWOR/Desktop/IMSA Training 2022/Day 1/Part1/58238_1981_2010_JJA_prep.txt")
+interannual.to_csv("C:/Users/drbml/Desktop/IMSA_PYTHON_2023/Day 1/Day 1/part 1/58238_1981_2010_JJA_prep.txt")
 
 # find line of best fit
 # a, b = np.polyfit(range(1981,2011), interannual, 1)
